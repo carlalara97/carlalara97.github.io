@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+ 	<title>Projecte Pokemon Go</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="styleFP.css">
+</head>
+
+<body>
+	<div>
+		<div class=header> 
+			<img id=logo src="Logo_Pokémon_GO.png"></img>
+			<div class="boto boto1">
+				<a href="#" onclick="document.getElementById('id01').style.display='block'"><b>Login</b></a>
+			</div>
+			<div class="boto boto2">
+				<a href="https://pokemongolive.com/es/" target="new"><b>Pkm Go</b></a>
+			</div>
+		</div>
+		<div class="transbox">
+			<p id="titolTxt"> What are we offering to you?</p>
+			<p> Just stupid things you don't need to play pokemon go, but these are extra information that every pokemon trainer is interested to know only for curiosity. So Login an see...</p>
+		</div>
+		<div>
+			<a href="https://www.youtube.com/watch?v=2sj2iQyBTQs">
+				<button class=botoTrailer>Watch the trailer</button>
+			</a>
+		</div>
+		<div class="w3-content w3-section" style="max-width:500px">
+			  <img class="mySlides" src="psyduck.jpg" style="width:100%">
+  				<img class="mySlides" src="mewtwo.jpg" style="width:100%">
+  				<img class="mySlides" src="cosplay.jpg" style="width:100%">
+  				<img class="mySlides" src="gengar.jpg" style="width:100%">
+  				<img class="mySlides" src="reality.jpg" style="width:100%">
+  				<img class="mySlides" src="gims.jpg" style="width:100%">
+  				<img class="mySlides" src="cuquis.png" style="width:100%">
+  				<img class="mySlides" src="caterpie.jpg" style="width:100%">
+  				<img class="mySlides" src="teams.jpg" style="width:100%">
+		</div>
+		<footer>
+			<pre id="peuPag"> ©Carla Lara  |  Copyright Policity </pre>
+		</footer>
+	</div>
+
+	<div id="id01" class="modal">
+	  <form class="modal-content animate" action="Ja_loguejat.html">
+	    <div class="imgcontainer">
+	      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span> 
+	      <img src="Avatares.jpg" class="avatar">
+	    </div>
+
+	    <div class="container">
+	      <label><b>Username</b></label>
+	      <input type="text" placeholder="Enter Username" name="uname" required>
+
+	      <label><b>Password</b></label>
+	      <input type="password" placeholder="Enter Password" name="psw" required>
+	        
+	      <button type="submit">Login</button>
+	      <label>
+	        <input type="checkbox"> Remember me
+	      </label>
+	    </div>
+
+	    <div class="container" style="background-color:#f1f1f1">
+	      <button type="button" class="cancelbtn" onclick="window.location.href='http://www.hyperlinkcode.com/button-links.php'">Help us to improve :)</button>
+	     <!-- <span class="psw">Forgot <a href="#">password?</a></span> -->
+	    </div>
+	  </form>
+	</div>
+
+	<script>
+	// Get the modal
+	var modal = document.getElementById('id01');
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+	    if (event.target == modal) {
+	        modal.style.display = "none";
+	    }
+	}
+
+	var myIndex = 0;
+	carousel();
+
+	function carousel() {
+	    var i;
+	    var x = document.getElementsByClassName("mySlides");
+	    for (i = 0; i < x.length; i++) {
+	       x[i].style.display = "none";  
+	    }
+	    myIndex++;
+	    if (myIndex > x.length) {myIndex = 1}    
+	    x[myIndex-1].style.display = "block";  
+	    setTimeout(carousel, 2000); // Change image every 2 seconds
+	}
+
+	</script>
+</body>
+
+</html>
