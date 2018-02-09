@@ -1,0 +1,136 @@
+html, body{
+	margin: 0;
+    width: 100%;
+	height: 100%;
+}
+
+.capçalera {
+	margin: 0;
+	background: linear-gradient(to right, #000000, #333);
+	padding: 17px;
+	overflow: hidden;
+	font-family: Arial;
+}
+
+#benvinguda {
+	font-size: 25px;
+	margin-left: 44%;
+	color: white;
+	margin-top: 10px;
+	position: absolute;
+}
+
+.desplegableset {
+	float: right;
+	overflow: hidden;   /*amaga la scroll bar */
+}
+
+.settings {
+	border: none;
+	outline:none;
+	color: white;
+	background-color: inherit; /*Pren les caracteristiques de color del pare*/
+	font-size: 16px;
+	padding: 14px 19px;
+	transition-duration: 0.5s;
+	cursor: pointer;
+	display: block;	
+}
+
+.settings:hover {
+	background-color: red;
+}
+
+.settings-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.settings-content a{
+	float: none;
+	color: black;
+	text-decoration: none;
+	text-align: left;
+	display: block;
+	padding: 12px 16px;
+}
+
+.settings-content a:hover {
+	background-color: #ddd;
+}
+
+.show {
+	display: block;   /*afageix com salts de linia */
+}
+
+/*
+ul {
+	display: inline;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%
+}
+
+li {
+	float: right;
+	border-right: 1px solid #bbb;
+	display: block;
+    color: blue;
+    text-align: center;
+    padding-right: 14px;
+    padding-left: 14px;
+    font-size: 20px;
+}
+
+li :hover {
+	background-color: #111;
+}
+
+#desp {
+	float: left;
+	border-right: none;
+}*/
+/*
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}*/

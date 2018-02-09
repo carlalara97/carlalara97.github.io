@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+ 	<title>Projecte Pokemon Go</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="styleSP.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<div>
+		<div class="capçalera">
+			<span id="benvinguda"><b>WELCOME tcarlala</b></span>
+			<div class="desplegableset">
+			    <button class="settings" onclick="Desplega()">Settings
+			      	<i class="fa fa-caret-down"></i>
+			    </button>
+			    <div class="settings-content" id="miDeslizable">
+			      	<a href="#">Help</a>
+					<a href="#">Logout</a>
+			    </div>
+			</div>
+			<!--<ul>
+				<li id ="desp">Desplegable</li>
+				<li id ="seti">Settings</li>
+				<li id = "he">Help</li>
+				<li id="ab">About</li>			
+			</ul>-->
+		</div>
+		<!--<div class="dropdown">
+		  <button class="dropbtn">Dropdown</button>
+		  <div class="dropdown-content">
+		    <a href="#">Link 1</a>
+		    <a href="#">Link 2</a>
+		    <a href="#">Link 3</a>
+		  </div>
+		</div>-->
+	</div>
+
+	<script>
+	/*Quan el usuari clica el botó es desplega o s'amaga*/
+	function Desplega() {
+	    document.getElementById("miDeslizable").classList.toggle("show");
+	}
+
+	// Per tancar si el usuari fa clik fora del desplegable
+	window.onclick = function(e) {
+	  if (!e.target.matches('.settings')) {
+	    var miDeslizable = document.getElementById("miDeslizable");
+	      if (miDeslizable.classList.contains('show')) {
+	        miDeslizable.classList.remove('show');
+	      }
+	  }
+	}
+	</script>
+</body>
+
+</html>

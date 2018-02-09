@@ -1,0 +1,49 @@
+#logo {
+	margin-left: 0px;
+	-ms-transform: rotate(-10deg); /* IE 9 */
+    -webkit-transform: rotate(-10deg); /* Safari 3-8 */
+	transform: rotate(-15deg);
+	width:15%;
+	height:15%;
+}
+
+.header{
+	margin:0px;
+	text-align: right;
+	padding-right: 100px;
+	display: inline;
+}
+
+
+.boto {
+/*background-color: white;*/
+    padding: 5px 45px;
+    position: absolute;
+    display: inline-block;
+    margin-top:28px;
+    margin-left: 60%;
+    border-radius: 15px;
+    font-size: 25px;
+    border-color:green;
+    border: 2px solid #A9F5F2;
+    transition-duration: 0.4s;
+}
+
+.boto a{
+	text-decoration: none;
+    color: black;
+}
+
+.boto2 {
+    margin-left: 71%;
+}
+
+.boto:hover {
+	/*background-color: #A4A4A4;*/
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+body {
+    background: url(PGyarados.jpg) no-repeat center fixed;
+    background-size: cover; 
+}
